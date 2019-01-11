@@ -74,7 +74,7 @@ void OLED_Fill(unsigned char fill_Data)//ȫ�����
     unsigned char m,n;
     for(m=0;m<8;m++)
     {
-        WriteCmd(0xb0+m);       //page0-page1
+        WriteCmd(0xb0+m);   //page0-page1
         WriteCmd(0x00);     //low column start address
         WriteCmd(0x10);     //high column start address
         for(n=0;n<128;n++)
